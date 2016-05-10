@@ -1,0 +1,9 @@
+[Unit]
+Description=Change motd to a motivational motd.
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/env python /var/lib/motivational-motd/change_quote.py
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,10 @@
+[Unit]
+Description=Run motivational-motd daily.
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+Unit=motivational-motd.service
+ 
+[Install]
+WantedBy=timers.target
